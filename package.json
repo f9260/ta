@@ -1,5 +1,4 @@
 {
-  "homepage": "https://f9260.github.io/ta",
 	"scripts": {
   "dev": "next",
   "build": "next build",
