@@ -2,6 +2,8 @@ import Image from 'next/image'
 import factory from 'images/factory.png'
 import render from 'images/render.png'
 import wide from 'images/wide.png'
+import subtitles from 'images/subtitles.png'
+import hitgunviral from 'images/hitgunviral.png'
 import { Card, Cards } from 'nextra-theme-docs'
 
 # Mod: Hit Gun
@@ -15,21 +17,33 @@ Hit Gun is the most advanced build of the VE3.Plus system.
 
 It enables the production of all types of content, from horizontal videos to verticals.
 
-It has three core features called **Factory**, **Wide** and **Render**.
+It has five core features called **Factory**, **Viral**, **Wide**, **Render** and **Subtitles**.
 
 All of these features have unique sub-features within them.
 
+ <Cards num={2}>
+
+             <Card title="Factory" image href="/hitgun/factory">
+                        <Image src={factory} /> 
+             
+              </Card>
+
+            <Card title="Viral" image href="/hitgun/viral">
+                        <Image src={hitgunviral} />
+              </Card>
+
+            </Cards>
 
 
   <Cards>
-              <Card title="Fabrika" image href="/hitgun/fabrika">
-                        <Image src={factory} />
-              </Card>
-              <Card title="Geniş" image href="/hitgun/genis">
+              <Card title="Wide" image href="/hitgun/wide">
                         <Image src={wide} />
               </Card>
-                 <Card title="Render" image href="/hitgun/render">
+              <Card title="Render" image href="/hitgun/render">
                         <Image src={render} />
+              </Card>
+                 <Card title="Subtitles" image href="/hitgun/subtitles">
+                        <Image src={subtitles} />
               </Card>
 
             </Cards>

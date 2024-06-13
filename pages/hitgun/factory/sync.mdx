@@ -1,15 +1,16 @@
+
+import Image from 'next/image'
+import esitle from 'images/esitle.png'
+
 # Sync
 
-Enables integration of the target video into the generated vertical video.
+Allows the target video to be integrated into the vertical video produced.
 
-When checked:
+If checked;
 
-- **Main Video Position**
-- **Main Video Ratio**
-- **Merged Area**
+**Main Video Position** - **Main Video Ratio** - **Merged Area**
 
-options appear.
-
+options arise.
 
 
 <video autoPlay muted loop controls>
@@ -18,72 +19,67 @@ options appear.
 </video>
 
 
+
 ## Main Video Position
 
-The main video represents the generated vertical video.
+Main video refers to the vertical video produced.
 
-There are two options in the main video position: **Top** and **Bottom**.
+The main video position has two options, **Top** and **Bottom**.
 
-By default, the Top option is checked, and the main video is positioned at the top in the generated content.
+By default, the Top option is selected and the main video is at the top of the produced content.
 
-When the Main Video Position is checked as Bottom, the merged video moves to the top, and the main video is positioned at the bottom.
+When the Main Video Position is marked as Bottom, the Sync video moves to the top and the main video is at the bottom.
 
 
 ## Main Video Ratio
 
-The main video ratio indicates the portion of the screen occupied by the main video in the split screen.
+The main video ratio refers to the space that the main video occupies on the split screen.
 
-By default, this ratio is 70. The number 70 represents 70%.
+By default, this ratio is 70. 70 means 70%.
 
-The remaining 30% section contains the Merged video.
-
+The remaining 30% is occupied by the merging video.
 
 
 ## Merged Area
 
-Specifies the area covered by the merged video.
+Specifies the area to be covered by the synchronised video.
 
-There are two options: **Default (%100)** and **Advanced**.
+There are two options, **Default (100%)** and **Advanced**.
 
-### Default (%100)
+
+### Default(100%)
 
 The entire target video is integrated.
 
+
+<Image src={esitle} width={425} height={600} />
+
+
+
 ### Advanced
 
-If you want to integrate a specific portion of the target video instead of the entire video, you can use the advanced option.
+If you want to integrate a part of the target video instead of the whole video, you can use the advanced option.
 
-When the **Advanced** option is checked, two options named **Percent** and **Pixel** appear as **Merged Custom Area Type**.
-
-
+If the **Advanced** option is selected, two ``Merged Custom Area Type`` named **Percent** and **Pixel** will appear.
 
 
+#### Merged Custom Area: Percent
+
+The working principle is the same as the structure we explained under the title [Area > Advanced > Custom Area Type: Percent](area/advanced#custom-area-type-percent).
 
 
-#### Merged Custom Area Type: Percent
-
-The working principle is the same as the Advanced structure explained under the Area title.
-
-Çalışma prensibi Alan başlığı altında açıkladığımız Gelişmiş yapısı ile aynıdır.
-
--- buraya link --
-
-The working principle is the same as the Advanced structure explained under the Area title.
-
-Çalışma prensibi Alan başlığı altında açıkladığımız Gelişmiş yapısı ile aynıdır.
-
-Allows us to select the desired area from the merged video using percentage ratios.
+It allows us to select the desired area from the synchronised video with percentage ratios.
 
 
-Detay için tıklayınız. --- link ---
+For details [click here.](area/advanced#custom-area-type-percent)
 
 
+#### Merged Custom Area: Pixel
+
+The working principle is the same as the structure we explained under the title [Area > Advanced > Custom Area Type: Percent](area/advanced#custom-area-type-pixel).
 
 
+It allows the area to be selected from the target video to be selected with pixels.
 
-#### Merged Custom Area Type: Pixel
 
-Allows the selection of the desired area from the target video using pixels.
-
-Detay için tıklayınız. 
-
+For details [click here.](area/advanced#custom-area-type-pixel)

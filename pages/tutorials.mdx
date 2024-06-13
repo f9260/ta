@@ -1,0 +1,21 @@
+import Image from 'next/image'
+import tutorial from 'images/tutorial.png'
+import talent from 'images/talent.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Tutorials
+
+Tutorials on the use of VE3.Plus are shared in our [Forum](https://forum.ve3.plus/).
+
+If you wish, you can contribute to our community by sharing your own tutorials with other users through the [Talent Scout](https://forum.ve3.plus/t/talent-scout) category.
+
+
+  <Cards num={2}>
+              <Card title="VE3.Plus Tutorials" image href="https://forum.ve3.plus/t/tutorials" target="_blank">
+                        <Image src={tutorial} />
+              </Card>
+              <Card title="Talent Scout" image href="https://forum.ve3.plus/t/talent-scout">
+                        <Image src={talent} />
+              </Card>
+             
+            </Cards>

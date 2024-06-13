@@ -1,16 +1,6 @@
 # Add Image
 
-It is an option where you can add image to your videos.
-
-You can use up to a total of 5 images.
-
-Add the images you want to use in a folder sequentially and define the folder in the system from the Images section.
-
-Select the number of images you want to use from the section labeled Image Count.
-
-Then you can create details from the Image Settings section.
-
-
+This is the option where you can add images to your videos.
 
 <video autoPlay muted loop controls>
   <source src="/gorselekle.mp4" type="video/mp4" />
@@ -18,38 +8,63 @@ Then you can create details from the Image Settings section.
 </video>
 
 
+## Images
 
-The settings for Width, Height, X, and Y coordinates of the added images are made here.
+Add the images you want to use in a folder in order and define the folder to the system from the Images section.
 
-According to the number of images you have added, you can create settings for each image using the "**::**" expression.
+## Number of Images
+
+You can add up to 5 images to your content. You can customise the size and position of these images and apply transparency settings.
+
+You can set how many images you want to use from the Number of Images section.
+
+## Image Settings
+
+Width, Height, X and Y coordinate settings of the added images are made here.
+
+According to the number of images you add, you can create the settings of each image with the expression ‘ **::** ’.
+
 
 ### Example
 
-Let's assume that we want to add 4 images to our project.
+Suppose we want to add 4 images to our work.
 
-We put the 4 images into a folder and defined it in the system.
+We put 4 images in a folder and defined them to the system.
 
-Then we set the Image Count to 4.
+Then we set the Number of Images as 4.
 
+We need to enter the resolutions of our images and the position information if we want them to be placed in which positions.
 
-** -- buralara step falan yapılabilir -- **
-
-We need to enter the resolution of our images and the desired positions where they should be placed.
-
--- görsellerle ifade edilecek --
-
-Let's create example resolutions and positions.
+Let's create sample resolutions and positions.
 
 import { Callout } from 'nextra/components'
  
 <Callout type="info" emoji="ℹ️">
-  The order of operations should be: Width, Height, X, Y.
+  Process order: Width, Height, X, Y should be created.
 </Callout>
 
 `250,420,50,290`::`400,120,140,80`::`110,270,35,65`::`350,200,45,90`
 
-As a result of these settings, 4 images will be integrated into the video at the desired resolutions and positions.
+
+As a result of these settings, 4 images will be integrated into the content in the resolutions and positions we desire.
 
 
+## Opacity Settings
+
+You can use this option to adjust the transparency of your images.
+
+Values between 1 and 9 can be given.
+
+As it approaches 9, the image becomes more prominent. Transparency increases as you move away from this value.
+
+In cases where more than one image is used, a separate value can be entered for each image with the ‘ :: ‘ parameter to enter a separate value for each image.
+
+### Example
+
+You have used three images and you want to set transparency for all three.
+
+In this case, if **5** value is written in the Opacity Settings section, this value is applied for **all images**.
+
+However, if you want to define separate values for each image, you can define separate values for each image as **5**::**2**::**7**.
 
 

@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import kaynak from 'app-images/kaynak.jpg'
+import proxy from 'app-images/proxy.jpg'
+import proxy2 from 'app-images/proxy2.jpg'
+import proxy3 from 'app-images/proxy3.jpg'
 
 # Resource
 
@@ -38,9 +41,6 @@ If we want to process multiple YouTube videos simultaneously, we use URL List.
 
 After adding the links one below the other in a notepad, the notepad is defined in the system.
 
-
-
-import { Callout } from 'nextra/components'
  
 <Callout type="warning" emoji="⚠️">
 
@@ -62,3 +62,67 @@ If URL List is passive, the operation proceeds based on the URL. If no link is d
 </Callout>
 
 
+## Proxy
+
+<Image src={proxy} />
+
+If you want to use the URL feature with Proxy, you can enable the Proxy option.
+
+
+### Proxy List
+
+
+To use the proxy feature, a notepad containing your proxies must be defined to the system from the **Proxy List** option.
+
+
+### Proxy Static Username
+
+If you have a proxy that connects with username and password and all your proxies have the same user and password defined, you can enter your username in this field.
+
+
+### Proxy Static Password
+
+If all your proxies have the same password, you can enter it in this field.
+
+
+
+### Proxy Rules
+
+
+- Proxy type must be **Http**. Https or Socks5 proxies are not supported.
+
+- If you have many proxies with different users and passwords, you should enter them in the notepad as 
+
+`IP`:`Port`:`Username`:`Password`.
+
+If you have the same user and password, you can only enter 
+
+`IP`:`Port` in the notepad.
+
+You can enter your username and password in **Proxy Static Username** and **Proxy Static Password** fields.
+
+If you do not have any username and password, just define 
+
+`IP`:`Port`.
+
+
+- Proxies should be listed one below the other in the notepad.
+
+E.g :
+
+<Image src={proxy2} />
+
+
+- Available proxies are used in a randomized way. For each run a random proxy is selected from the list. 
+
+- It is recommended to add at least 10 http proxy types for proxy usage.
+
+
+### Where Can I Buy Http Proxy?
+
+You can purchase it from [Webshare.io](https://www.webshare.io/?referral_code=ez4c6cj8l39n).
+
+
+<a href="https://www.webshare.io/?referral_code=ez4c6cj8l39n" target="_blank">
+  <Image src={proxy3} width={600} height={600} />
+</a>

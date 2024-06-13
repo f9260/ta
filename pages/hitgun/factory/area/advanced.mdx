@@ -1,40 +1,117 @@
-# Advanced
-
-The advanced area is a more complex structure.
-
-In all other options, the images taken from the target video start from the top and go down to the bottom. Ratios are created only for the right and left areas.
-
-For example, at a value of 38%, the 31% areas on the right and left of the video are ignored and not visible in the saved mp4 file.
-
-The Advanced option allows us to manipulate the entire target video.
-
-We can save any frame we want.
-
-When the **Advanced** option is active, two types of **Advanced Area Type** appear: **Percent** and **Pixel**.
-
-## Custom Area Type: Percent
-
-This is where we select the portion of the target video we want to capture using percentage expressions.
-
-Its greatest benefit is eliminating the need for resolution calculation.
-
-As it is known, the resolution of each video can be different. Therefore, working based on "fixed values" especially in projects involving many different target videos can create problems.
-
-To minimize these problems, conducting operations with percentage expressions will lead to more accurate results.
-
-When the percentage option is checked, the **Custom Area Percent** option appears.
-
-The sequence here is: **Top**, **Bottom**, **Left**, **Right**.
-
-According to the area we want to select, we write our percentage ratios from the top, bottom, left, and right, and the remaining part becomes the area we will save.
+import Image from 'next/image'
+import alan from 'images/alan.png'
+import alan2 from 'images/alan2.png'
+import alan3 from 'images/alan3.png'
+import alan4 from 'images/alan4.png'
+import alan5 from 'images/alan5.png'
 
 
-## Custom Area Type: Pixel
+## Advanced
 
-Allows the selection of the area to be captured from the target video using pixels.
+The Advanced area is a more complex structure. 
 
-When checked, the **Custom Area Pixel** option appears on the screen.
+In all other options, images from the target video start at the top and descend to the bottom. Proportions are created based only on the left and right areas.
 
-Here, **Width**, **Height**, **X Coord**, and **Y Coord** values ​​must be entered in order.
+For example, at 38%, the 31% areas to the left and right of the video are ignored and do not appear in the recorded mp4 file.
 
-The entered width and height values specify the width and height of the area to be selected in the target video. The X and Y values ​​are the coordinates where this area is located.
+The advanced option allows us to intervene in the entire target video.
+
+
+We can save any point, frame we wish.
+
+If the **Advanced** option is selected, two ``Custom Area Type‘’ named **Percent** and **Pixel** are created.
+
+
+### Custom Area Type: Percent
+
+This is where we select the part we want to capture from the target video with percentage expressions.
+
+<Image src={alan} />
+
+The biggest benefit is that it eliminates the need to calculate resolution.
+
+As it is known, the resolution of each video can be different from each other. 
+Therefore, especially when working with a large number of different target videos, working on ‘fixed values’ may cause problems.
+
+In order to minimise these problems, using percentage expressions will provide more accurate results.
+
+
+When the percentage option is selected, the **Custom Area Percent** option appears.
+
+The order here is : **Top**, **Bottom**, **Left**, **Right**.
+
+We write our percentages from the top, bottom, left and right according to the area we want to select and the remaining part is the part we will save.
+
+
+Example : 5,55,60,6
+
+<Image src={alan2} width={800} height={800} />
+
+
+### Custom Area Type: Pixel
+
+Allows to select the area to be selected from the target video with pixels.
+
+When ticked, the **Advanced Area - Pixel** option appears on the screen.
+
+Here, **Width**, **Height**, **X** and **Y coordinates** must be entered <u>***sort of***</u>.
+
+The entered width and height values indicate the width and height of the area to be selected in the target video. X and Y are the coordinates where this area is located.
+
+
+
+#### Example
+
+We can use **Paint** to explain the Pixel property through the image above:
+
+To find the resolution values (video resolution) of the red frame, we can access the resolution of this area when we select the relevant area using the ‘Select’ feature of Paint.
+
+The resolution of our video that we want to select a special area is **737x385**.
+
+
+<Image src={alan3}  />
+
+
+
+
+The resolution of the blue area we want to select in the video is **223x192**.
+
+
+<Image src={alan4}  />
+
+
+That is, in order to be able to select the relevant area in an image with a resolution of **737x385**, our resolution setting must be **223x192**.
+
+
+After determining our resolution setting, we need to determine the **X** and **Y coordinates** of this resolution.
+
+In this case, in order to determine the location, we need to move the mouse to the starting point of the area we want to select.
+
+
+<Image src={alan5}  />
+
+
+
+When the mouse is moved to the location indicated by the red dot, we can see from the bottom left that the X and Y values of the relevant location are **499**,**52**.
+
+The first value is X and the second value is Y coordinate. 
+
+
+In this case;
+
+`X coordinate` : **499**
+
+`Y coordinate` : **52** 
+
+becomes.
+
+In the last case, since we have both resolution and X and Y coordinates, we can enter these values into the system.
+
+
+The values we need to define in our system will be as follows respectively:
+
+
+**223,192,499,52**
+
+
+In case the resolution of the target content is 737x385, if the above data is defined in the system, the relevant area will be selected and only the image of this area will appear in the produced video.

@@ -1,0 +1,99 @@
+
+# Viral Mods
+
+
+<video autoPlay muted loop controls>
+  <source src="/viral.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+**Regular** ve **Random** olmak üzere iki adet viral modu bulunmaktadır.
+
+
+## Regular Mod
+
+If you want to produce content with fixed durations, this mode will meet your needs.
+
+
+**For example**
+
+Let 4 scenes of the sound file you are using be specified with durations `4.1`, `2.3`, `3.6`, `1.9`.
+
+For these 4 scenes, you wanted to produce content by using video footage 
+from the minutes **14:13**, **21:36**, **33:17** and **38:11** of a 40-minute video.
+
+
+
+**In this case** 
+
+The ``first scene`` starts at **14:13** minutes and continues until ``(+4.1)``**14:17.1**.
+
+The ``second scene`` starts at **21:36** minutes and continues until ``(+2.3)``**21:38.3**.
+
+The ``third scene`` starts at **33:17** minutes and continues until ``(+3.6)``**33:20.6**.
+
+The ``last scene`` starts at **38:11** minutes and continues until ``(+1.9)``**38:12.9**.
+
+
+
+A new content is created from the video images obtained with the relevant audio file.
+
+
+
+<Callout type="info" emoji="ℹ️">
+ In Regular mode, production takes place according to the times entered.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  In Regular mode, only the time is entered. Like 14:11, 21:16, 1:27:19.
+</Callout>
+
+
+## Random Mod
+
+When Random mode is activated, random scenes are selected from the time intervals you enter and a new video is created with this content.
+
+
+**For example**
+
+Let 4 scenes of the sound file you are using be specified with durations `4.1`, `2.3`, `3.6`, `1.9`.
+
+For these 4 scenes, you wanted to produce content using video footage between **5-13**, **14-18**, **21-27** and **31-36** minutes of a 40-minute video.
+
+
+In this case, random durations are selected from the entered time intervals and the relevant scene productions are performed starting from these durations.
+
+
+The ``first scene`` starts at **7:25** minutes and continues until ``(+4.1)``**7:29.1**.
+
+The ``second scene`` starts at **16:13** minutes and continues until ``(+2.3)``**16:15.3**.
+
+The ``third scene`` starts at **24:12** minutes and continues until ``(+3.6)``**24:15.6**.
+
+The ``last scene`` starts at **33:28** minutes and continues until ``(+1.9)``**33:29.9**.
+
+
+etc.
+
+
+import { Callout } from 'nextra/components'
+
+<Callout type="info" emoji="ℹ️">
+  In random mode, **``for each voice used``** as much content is generated as the value entered in **How Many**.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  In random mode, time intervals are entered. **``14-21``**,**``18-39``**,**``41-1:22``** gibi.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  The time intervals are specified in minutes and hours.
+</Callout>
+
+
+### How Many
+
+When random mode is activated, the How Many option appears.
+
+Content is generated as many times as the number of values entered here. Each generated content consists of random moments of the scenes you specify.

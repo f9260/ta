@@ -1,4 +1,6 @@
-# Görsel Ekle(T)
+# Add Images(T)
+
+If you want to add transparent images, you can use this area.
 
 
 <video autoPlay muted loop controls>
@@ -7,8 +9,76 @@
 </video>
 
 
-It is created to keep transparent images separate from regular images and to facilitate smoother workflow.
+The working logic is the same as the Add Image option. It was created to use transparent images and normal images separately.
 
-The Add Image feature has the same structure and functionality.
 
-Click here for detailed usage information.
+## Images(T)
+
+Add the transparent images you want to use in a folder in order and define the folder to the system from the Images (T) section.
+
+
+## Number of Images(T)
+
+You can add up to 5 transparent images to your content. You can customise the size and position of these images and apply transparency settings.
+
+You can set how many images you want to use in the Number of Images (T) section.
+
+
+
+## Image Settings(T)
+
+Width, Height, X and Y coordinate settings of the added images are made here.
+
+According to the number of images you add, you can create the settings of each image with the expression ‘ **::** ’.
+
+#### Example
+
+Suppose we want to add 4 images to our work.
+
+We put 4 images in a folder and defined them to the system.
+
+Then we set the Number of Images as 4.
+
+We need to enter the resolutions of our images and the position information if we want them to be placed in which positions.
+
+Let's create sample resolutions and positions.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  Process order: Width, Height, X, Y should be created.
+</Callout>
+
+`250,420,50,290`::`400,120,140,80`::`110,270,35,65`::`350,200,45,90`
+
+
+As a result of these settings, 4 images will be integrated into the content in the resolutions and positions we desire.
+
+
+## Opacity Settings(T)
+
+You can use this option to adjust the transparency of your images.
+
+A value between 1 and 9 can be given.
+
+As you get closer to 9, the image becomes more prominent. Transparency increases as you move away from this value.
+
+In cases where more than one image is used, a separate value can be entered for each image using the `::` parameter.
+
+### Example
+
+You have used three images and you want to set transparency for all three.
+
+In this case, if **5** value is written in the Opacity Settings section, this value is applied for **all images**.
+
+However, if you want to define separate values for each image, you can define separate values for each image as **5**::**2**::**7**.
+
+
+## Time Range(Wide)
+
+It is the feature that becomes available when the Time Range(Wide) option is activated.
+
+[**Hit Gun > Wide mod**](/hitgun/wide) allows you to create horizontal content. In this content, you can create content that stays on the screen for a certain period of time and then disappears. 
+This feature can be used to create the images you want.
+
+For example, when **5-15** is written in the Time Range section, the relevant image appears at the 5th second of the video and disappears after remaining on the screen until the 15th second.
