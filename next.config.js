@@ -6,7 +6,7 @@ const withNextra = require("nextra")({
 
 
 const nextConfig = {
-  basePath: '/guide'
+  basePath: '/guide',
   images: {
     unoptimized: true,
   },
